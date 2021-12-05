@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
+}
+
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output = "../prisma/generated/type-graphql"
+  emitTranspiledCode = true
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+model Empresa{
+  id       String    @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  nombre String
+  razonSocial String
+  tipoIdentificacion String
+  numeroIdentificacion String
+  numeroEmpleados Int
+  logo String
+  estado String
+}

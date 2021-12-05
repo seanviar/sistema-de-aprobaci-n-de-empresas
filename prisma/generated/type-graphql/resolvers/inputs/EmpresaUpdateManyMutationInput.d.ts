@@ -1,0 +1,11 @@
+import { IntFieldUpdateOperationsInput } from "../inputs/IntFieldUpdateOperationsInput";
+import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
+export declare class EmpresaUpdateManyMutationInput {
+    nombre?: StringFieldUpdateOperationsInput | undefined;
+    razonSocial?: StringFieldUpdateOperationsInput | undefined;
+    tipoIdentificacion?: StringFieldUpdateOperationsInput | undefined;
+    numeroIdentificacion?: StringFieldUpdateOperationsInput | undefined;
+    numeroEmpleados?: IntFieldUpdateOperationsInput | undefined;
+    logo?: StringFieldUpdateOperationsInput | undefined;
+    estado?: StringFieldUpdateOperationsInput | undefined;
+}

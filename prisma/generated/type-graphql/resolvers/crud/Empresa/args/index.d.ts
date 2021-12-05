@@ -1,0 +1,12 @@
+export { AggregateEmpresaArgs } from "./AggregateEmpresaArgs";
+export { CreateEmpresaArgs } from "./CreateEmpresaArgs";
+export { CreateManyEmpresaArgs } from "./CreateManyEmpresaArgs";
+export { DeleteEmpresaArgs } from "./DeleteEmpresaArgs";
+export { DeleteManyEmpresaArgs } from "./DeleteManyEmpresaArgs";
+export { FindFirstEmpresaArgs } from "./FindFirstEmpresaArgs";
+export { FindManyEmpresaArgs } from "./FindManyEmpresaArgs";
+export { FindUniqueEmpresaArgs } from "./FindUniqueEmpresaArgs";
+export { GroupByEmpresaArgs } from "./GroupByEmpresaArgs";
+export { UpdateEmpresaArgs } from "./UpdateEmpresaArgs";
+export { UpdateManyEmpresaArgs } from "./UpdateManyEmpresaArgs";
+export { UpsertEmpresaArgs } from "./UpsertEmpresaArgs";

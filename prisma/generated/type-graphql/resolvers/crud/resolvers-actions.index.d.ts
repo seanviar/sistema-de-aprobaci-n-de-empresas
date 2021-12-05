@@ -1,0 +1,12 @@
+export { FindUniqueEmpresaResolver } from "./Empresa/FindUniqueEmpresaResolver";
+export { FindFirstEmpresaResolver } from "./Empresa/FindFirstEmpresaResolver";
+export { FindManyEmpresaResolver } from "./Empresa/FindManyEmpresaResolver";
+export { CreateEmpresaResolver } from "./Empresa/CreateEmpresaResolver";
+export { CreateManyEmpresaResolver } from "./Empresa/CreateManyEmpresaResolver";
+export { DeleteEmpresaResolver } from "./Empresa/DeleteEmpresaResolver";
+export { UpdateEmpresaResolver } from "./Empresa/UpdateEmpresaResolver";
+export { DeleteManyEmpresaResolver } from "./Empresa/DeleteManyEmpresaResolver";
+export { UpdateManyEmpresaResolver } from "./Empresa/UpdateManyEmpresaResolver";
+export { UpsertEmpresaResolver } from "./Empresa/UpsertEmpresaResolver";
+export { AggregateEmpresaResolver } from "./Empresa/AggregateEmpresaResolver";
+export { GroupByEmpresaResolver } from "./Empresa/GroupByEmpresaResolver";
