@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Empresa = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
+const EmpresaCount_1 = require("../resolvers/outputs/EmpresaCount");
 let Empresa = class Empresa {
 };
 (0, tslib_1.__decorate)([
@@ -53,6 +54,12 @@ let Empresa = class Empresa {
     }),
     (0, tslib_1.__metadata)("design:type", String)
 ], Empresa.prototype, "estado", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => EmpresaCount_1.EmpresaCount, {
+        nullable: false
+    }),
+    (0, tslib_1.__metadata)("design:type", EmpresaCount_1.EmpresaCount)
+], Empresa.prototype, "_count", void 0);
 Empresa = (0, tslib_1.__decorate)([
     TypeGraphQL.ObjectType("Empresa", {
         isAbstract: true

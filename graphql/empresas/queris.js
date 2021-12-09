@@ -9,5 +9,9 @@ query{empresas {
   numeroEmpleados
   logo
   estado
+  documentos{
+    nombre
+    link
+  }
 }}`
 export {get_EMPRESAS}

@@ -1,3 +1,4 @@
+import { DocumentosCreateNestedManyWithoutEmpresaInput } from "../inputs/DocumentosCreateNestedManyWithoutEmpresaInput";
 export declare class EmpresaCreateInput {
     id?: string | undefined;
     nombre: string;
@@ -7,4 +8,5 @@ export declare class EmpresaCreateInput {
     numeroEmpleados: number;
     logo: string;
     estado: string;
+    documentos?: DocumentosCreateNestedManyWithoutEmpresaInput | undefined;
 }

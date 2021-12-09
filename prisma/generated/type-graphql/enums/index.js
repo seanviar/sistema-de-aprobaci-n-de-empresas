@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SortOrder = exports.QueryMode = exports.EmpresaScalarFieldEnum = void 0;
+exports.SortOrder = exports.QueryMode = exports.EmpresaScalarFieldEnum = exports.DocumentosScalarFieldEnum = void 0;
+var DocumentosScalarFieldEnum_1 = require("./DocumentosScalarFieldEnum");
+Object.defineProperty(exports, "DocumentosScalarFieldEnum", { enumerable: true, get: function () { return DocumentosScalarFieldEnum_1.DocumentosScalarFieldEnum; } });
 var EmpresaScalarFieldEnum_1 = require("./EmpresaScalarFieldEnum");
 Object.defineProperty(exports, "EmpresaScalarFieldEnum", { enumerable: true, get: function () { return EmpresaScalarFieldEnum_1.EmpresaScalarFieldEnum; } });
 var QueryMode_1 = require("./QueryMode");

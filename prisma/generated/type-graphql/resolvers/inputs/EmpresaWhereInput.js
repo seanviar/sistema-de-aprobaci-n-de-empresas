@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmpresaWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
+const DocumentosListRelationFilter_1 = require("../inputs/DocumentosListRelationFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 let EmpresaWhereInput = EmpresaWhereInput_1 = class EmpresaWhereInput {
@@ -74,6 +75,12 @@ let EmpresaWhereInput = EmpresaWhereInput_1 = class EmpresaWhereInput {
     }),
     (0, tslib_1.__metadata)("design:type", StringFilter_1.StringFilter)
 ], EmpresaWhereInput.prototype, "estado", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => DocumentosListRelationFilter_1.DocumentosListRelationFilter, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", DocumentosListRelationFilter_1.DocumentosListRelationFilter)
+], EmpresaWhereInput.prototype, "documentos", void 0);
 EmpresaWhereInput = EmpresaWhereInput_1 = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("EmpresaWhereInput", {
         isAbstract: true

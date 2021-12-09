@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { ApolloProvider, ApolloClient,  InMemoryCache } from '@apollo/client';
+import Navbar from '../componentes/navbar';
 
 
 const client = new ApolloClient({
@@ -12,7 +13,9 @@ const client = new ApolloClient({
 function MyApp({ Component, pageProps }) {
   return (
     <ApolloProvider client={client}>
+          <Navbar/>
           <Component {...pageProps} />
+          
     </ApolloProvider>
   );
 }

@@ -2,13 +2,13 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
   previewFeatures = ["mongoDb"]
 }
 
 generator typegraphql {
-  provider = "typegraphql-prisma"
-  output = "../prisma/generated/type-graphql"
+  provider           = "typegraphql-prisma"
+  output             = "../prisma/generated/type-graphql"
   emitTranspiledCode = true
 }
 
@@ -16,13 +16,25 @@ datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
 }
-model Empresa{
-  id       String    @id @default(dbgenerated()) @map("_id") @db.ObjectId
-  nombre String
-  razonSocial String
-  tipoIdentificacion String
+
+model Empresa {
+  id                   String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  nombre               String
+  razonSocial          String
+  tipoIdentificacion   String
   numeroIdentificacion String
-  numeroEmpleados Int
-  logo String
-  estado String
+  numeroEmpleados      Int
+  logo                 String
+  estado               String
+
+
+  documentos Documentos[]
+}
+
+model Documentos {
+  id        String  @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  empresa   Empresa @relation(fields: [empresaId], references: [id])
+  nombre    String
+  link      String
+  empresaId String  @db.ObjectId
 }

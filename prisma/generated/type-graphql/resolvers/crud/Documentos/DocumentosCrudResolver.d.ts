@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateDocumentosArgs } from "./args/AggregateDocumentosArgs";
+import { CreateDocumentosArgs } from "./args/CreateDocumentosArgs";
+import { CreateManyDocumentosArgs } from "./args/CreateManyDocumentosArgs";
+import { DeleteDocumentosArgs } from "./args/DeleteDocumentosArgs";
+import { DeleteManyDocumentosArgs } from "./args/DeleteManyDocumentosArgs";
+import { FindFirstDocumentosArgs } from "./args/FindFirstDocumentosArgs";
+import { FindManyDocumentosArgs } from "./args/FindManyDocumentosArgs";
+import { FindUniqueDocumentosArgs } from "./args/FindUniqueDocumentosArgs";
+import { GroupByDocumentosArgs } from "./args/GroupByDocumentosArgs";
+import { UpdateDocumentosArgs } from "./args/UpdateDocumentosArgs";
+import { UpdateManyDocumentosArgs } from "./args/UpdateManyDocumentosArgs";
+import { UpsertDocumentosArgs } from "./args/UpsertDocumentosArgs";
+import { Documentos } from "../../../models/Documentos";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateDocumentos } from "../../outputs/AggregateDocumentos";
+import { DocumentosGroupBy } from "../../outputs/DocumentosGroupBy";
+export declare class DocumentosCrudResolver {
+    findUniqueDocumentos(ctx: any, info: GraphQLResolveInfo, args: FindUniqueDocumentosArgs): Promise<Documentos | null>;
+    findFirstDocumentos(ctx: any, info: GraphQLResolveInfo, args: FindFirstDocumentosArgs): Promise<Documentos | null>;
+    findManyDocumentos(ctx: any, info: GraphQLResolveInfo, args: FindManyDocumentosArgs): Promise<Documentos[]>;
+    createDocumentos(ctx: any, info: GraphQLResolveInfo, args: CreateDocumentosArgs): Promise<Documentos>;
+    createManyDocumentos(ctx: any, info: GraphQLResolveInfo, args: CreateManyDocumentosArgs): Promise<AffectedRowsOutput>;
+    deleteDocumentos(ctx: any, info: GraphQLResolveInfo, args: DeleteDocumentosArgs): Promise<Documentos | null>;
+    updateDocumentos(ctx: any, info: GraphQLResolveInfo, args: UpdateDocumentosArgs): Promise<Documentos | null>;
+    deleteManyDocumentos(ctx: any, info: GraphQLResolveInfo, args: DeleteManyDocumentosArgs): Promise<AffectedRowsOutput>;
+    updateManyDocumentos(ctx: any, info: GraphQLResolveInfo, args: UpdateManyDocumentosArgs): Promise<AffectedRowsOutput>;
+    upsertDocumentos(ctx: any, info: GraphQLResolveInfo, args: UpsertDocumentosArgs): Promise<Documentos>;
+    aggregateDocumentos(ctx: any, info: GraphQLResolveInfo, args: AggregateDocumentosArgs): Promise<AggregateDocumentos>;
+    groupByDocumentos(ctx: any, info: GraphQLResolveInfo, args: GroupByDocumentosArgs): Promise<DocumentosGroupBy[]>;
+}

@@ -1,3 +1,4 @@
+import { DocumentosListRelationFilter } from "../inputs/DocumentosListRelationFilter";
 import { IntFilter } from "../inputs/IntFilter";
 import { StringFilter } from "../inputs/StringFilter";
 export declare class EmpresaWhereInput {
@@ -12,4 +13,5 @@ export declare class EmpresaWhereInput {
     numeroEmpleados?: IntFilter | undefined;
     logo?: StringFilter | undefined;
     estado?: StringFilter | undefined;
+    documentos?: DocumentosListRelationFilter | undefined;
 }

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmpresaUpdateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = (0, tslib_1.__importStar)(require("type-graphql"));
+const DocumentosUpdateManyWithoutEmpresaInput_1 = require("../inputs/DocumentosUpdateManyWithoutEmpresaInput");
 const IntFieldUpdateOperationsInput_1 = require("../inputs/IntFieldUpdateOperationsInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let EmpresaUpdateInput = class EmpresaUpdateInput {
@@ -49,6 +50,12 @@ let EmpresaUpdateInput = class EmpresaUpdateInput {
     }),
     (0, tslib_1.__metadata)("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], EmpresaUpdateInput.prototype, "estado", void 0);
+(0, tslib_1.__decorate)([
+    TypeGraphQL.Field(_type => DocumentosUpdateManyWithoutEmpresaInput_1.DocumentosUpdateManyWithoutEmpresaInput, {
+        nullable: true
+    }),
+    (0, tslib_1.__metadata)("design:type", DocumentosUpdateManyWithoutEmpresaInput_1.DocumentosUpdateManyWithoutEmpresaInput)
+], EmpresaUpdateInput.prototype, "documentos", void 0);
 EmpresaUpdateInput = (0, tslib_1.__decorate)([
     TypeGraphQL.InputType("EmpresaUpdateInput", {
         isAbstract: true

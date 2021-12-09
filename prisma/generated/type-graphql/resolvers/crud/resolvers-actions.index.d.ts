@@ -1,3 +1,15 @@
+export { FindUniqueDocumentosResolver } from "./Documentos/FindUniqueDocumentosResolver";
+export { FindFirstDocumentosResolver } from "./Documentos/FindFirstDocumentosResolver";
+export { FindManyDocumentosResolver } from "./Documentos/FindManyDocumentosResolver";
+export { CreateDocumentosResolver } from "./Documentos/CreateDocumentosResolver";
+export { CreateManyDocumentosResolver } from "./Documentos/CreateManyDocumentosResolver";
+export { DeleteDocumentosResolver } from "./Documentos/DeleteDocumentosResolver";
+export { UpdateDocumentosResolver } from "./Documentos/UpdateDocumentosResolver";
+export { DeleteManyDocumentosResolver } from "./Documentos/DeleteManyDocumentosResolver";
+export { UpdateManyDocumentosResolver } from "./Documentos/UpdateManyDocumentosResolver";
+export { UpsertDocumentosResolver } from "./Documentos/UpsertDocumentosResolver";
+export { AggregateDocumentosResolver } from "./Documentos/AggregateDocumentosResolver";
+export { GroupByDocumentosResolver } from "./Documentos/GroupByDocumentosResolver";
 export { FindUniqueEmpresaResolver } from "./Empresa/FindUniqueEmpresaResolver";
 export { FindFirstEmpresaResolver } from "./Empresa/FindFirstEmpresaResolver";
 export { FindManyEmpresaResolver } from "./Empresa/FindManyEmpresaResolver";

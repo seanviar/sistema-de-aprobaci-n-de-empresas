@@ -1,3 +1,4 @@
+import { DocumentosOrderByRelationAggregateInput } from "../inputs/DocumentosOrderByRelationAggregateInput";
 export declare class EmpresaOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
     nombre?: "asc" | "desc" | undefined;
@@ -7,4 +8,5 @@ export declare class EmpresaOrderByWithRelationInput {
     numeroEmpleados?: "asc" | "desc" | undefined;
     logo?: "asc" | "desc" | undefined;
     estado?: "asc" | "desc" | undefined;
+    documentos?: DocumentosOrderByRelationAggregateInput | undefined;
 }

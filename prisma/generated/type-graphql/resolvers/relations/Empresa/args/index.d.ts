@@ -1,0 +1,1 @@
+export { EmpresaDocumentosArgs } from "./EmpresaDocumentosArgs";
